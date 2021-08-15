@@ -1,12 +1,15 @@
 {
-  "name": "my-app",
+  "name": "vcth-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p $PORT",
+    "lint": "next lint",
+    "export": "next export",
+    "start:build": "serve out",
+    "heroku-postbuild": "yarn build"
   },
   "dependencies": {
     "next": "11.1.0",
@@ -14,9 +17,15 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@types/react": "17.0.17",
-    "eslint": "7.32.0",
+    "@types/node": "^16.6.1",
+    "@types/react": "^17.0.17",
+    "autoprefixer": "^10.3.1",
+    "eslint": "^7.32.0",
     "eslint-config-next": "11.1.0",
-    "typescript": "4.3.5"
+    "gh-pages": "^3.2.3",
+    "postcss": "^8.3.6",
+    "stylelint-config-recommended": "^5.0.0",
+    "tailwindcss": "^2.2.7",
+    "typescript": "^4.3.5"
   }
 }
