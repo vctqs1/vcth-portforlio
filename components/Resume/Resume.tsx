@@ -1,7 +1,7 @@
 import Image from "next/dist/client/image";
 function Resume() {
     return (
-        <section>
+        <section className="mt-5">
             <h3 className="text-3xl mb-5 animate-bounce">
                 <strong className="text-purple">OVERVIEW</strong>
             </h3>

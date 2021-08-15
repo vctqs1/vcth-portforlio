@@ -5,8 +5,10 @@ function About() {
     return (
         <header className="max-h-full grid grid-flow-col grid-cols-2 grid-rows-1">
             <div className="grid content-center">
-                <h1 className="text-5xl mb-9 animate-bounce">Hi there !</h1>
-                <h3 className="text-7xl">
+                <h1 className="md:text-5xl text-2xl mb-9 animate-bounce">
+                    Hi there !
+                </h1>
+                <h3 className="md:text-7xl text-4xl">
                     I am <strong className="text-purple">Thu Vo</strong>
                 </h3>
                 <div
