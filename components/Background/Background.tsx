@@ -1,11 +1,12 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, useEffect } from "react";
 
 const Background = ({ children }: PropsWithChildren<{}>) => {
-    return (
-        <body className="bg-white dark:bg-black transition-all dark:text-gray-200">
-            {children}
-        </body>
-    );
+    useEffect(() => {
+        document.body.className =
+            "bg-white dark:bg-black transition-all dark:text-gray-200";
+    }, []);
+
+    return <>{children}</>;
 };
 
 export default Background;

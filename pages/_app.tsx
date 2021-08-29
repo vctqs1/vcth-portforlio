@@ -7,8 +7,8 @@ import Background from "../components/Background";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <ThemeProvider>
-            <Background>
+        <Background>
+            <ThemeProvider>
                 <Head>
                     <title>vctqs1 Portfolio</title>
                     <meta
@@ -19,8 +19,8 @@ function MyApp({ Component, pageProps }: AppProps) {
                 </Head>
                 <Navbar />
                 <Component {...pageProps} />
-            </Background>
-        </ThemeProvider>
+            </ThemeProvider>
+        </Background>
     );
 }
 export default MyApp;

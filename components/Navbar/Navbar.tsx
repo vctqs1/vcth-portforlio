@@ -17,8 +17,8 @@ function Navbar() {
 
     const ToggleModeIcon = mode === "dark" ? HiSun : HiMoon;
     return (
-        <>
-            <p className="z-20 text-center text-xs py-3 sticky top-0">
+        <div className="sticky top-0 z-20">
+            <p className="text-center text-xs py-3">
                 Feel free to connect with me{" "}
                 <code className="text-purple">vctqs1@gmail.com</code>
             </p>
@@ -29,7 +29,7 @@ function Navbar() {
             >
                 <ToggleModeIcon className="text-gray-500 dark:text-gray-200 text-2xl cursor-pointer" />
             </div>
-        </>
+        </div>
     );
 }
 
