@@ -18,6 +18,14 @@ function MyApp({ Component, pageProps }: AppProps) {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <Navbar />
+                <div id="container">
+                    <div id="sentences-container"></div>
+                    <div id="self-similarity-matrix">
+                        <div className="labels y-axis"></div>
+                        <div className="labels x-axis"></div>
+                        <canvas></canvas>
+                    </div>
+                </div>
                 <Component {...pageProps} />
             </ThemeProvider>
         </Background>
